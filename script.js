@@ -22,7 +22,7 @@ function showStart() {
 }
 
 
-/*function showMenu() {
+function showMenu() {
     document.querySelector("#menu").classList.remove("hide");
     document.querySelector("#kryds").addEventListener("click", hideMenu);
 }
@@ -30,7 +30,7 @@ function showStart() {
 
 function hideMenu() {
     document.querySelector("#menu").classList.add("hide");
-}*/
+}
 
 
 function hideStart() {
@@ -57,9 +57,62 @@ function hideIntro() {
     console.log("hideIntro");
     document.querySelector("#next").classList.remove("pulse");
     document.querySelector("#intro").classList.add("fade_out");
-    document.querySelector("#intro").addEventListener("animationend", startGame);
+    document.querySelector("#intro").addEventListener("animationend", showDilemma1);
 }
 
+function showDilemma1() {
+    console.log("showDilemma1");
+    // document.querySelector("#start").removeEventListener("animationend", showIntro);
+    document.querySelector("#intro").classList.add("hide");
+    document.querySelector("#dilemma1").classList.remove("hide");
+    //    document.querySelector("#start").classList.add("show");
+    document.querySelector("#next1").classList.add("pulse");
+    document.querySelector("#next1").addEventListener("click", hideDilemma1);
+}
+
+
+function hideDilemma1() {
+    console.log("hideDilemma1");
+    document.querySelector("#next").classList.remove("pulse");
+    document.querySelector("#dilemma1").classList.add("fade_out");
+    document.querySelector("#dilemma1").addEventListener("animationend", showDilemma2);
+}
+
+function showDilemma2() {
+    console.log("showDilemma2");
+    // document.querySelector("#start").removeEventListener("animationend", showIntro);
+    document.querySelector("#dilemma1").classList.add("hide");
+    document.querySelector("#dilemma2").classList.remove("hide");
+    //    document.querySelector("#start").classList.add("show");
+    document.querySelector("#next2").classList.add("pulse");
+    document.querySelector("#next2").addEventListener("click", hideDilemma2);
+}
+
+
+function hideDilemma2() {
+    console.log("hideDilemma2");
+    document.querySelector("#next").classList.remove("pulse");
+    document.querySelector("#dilemma2").classList.add("fade_out");
+    document.querySelector("#dilemma2").addEventListener("animationend", showDilemma3);
+}
+
+function showDilemma3() {
+    console.log("showDilemma3");
+    // document.querySelector("#start").removeEventListener("animationend", showIntro);
+    document.querySelector("#dilemma2").classList.add("hide");
+    document.querySelector("#dilemma3").classList.remove("hide");
+    //    document.querySelector("#start").classList.add("show");
+    document.querySelector("#next3").classList.add("pulse");
+    document.querySelector("#next3").addEventListener("click", hideDilemma3);
+}
+
+
+function hideDilemma3() {
+    console.log("hideDilemma3");
+    document.querySelector("#next").classList.remove("pulse");
+    document.querySelector("#dilemma3").classList.add("fade_out");
+    document.querySelector("#dilemma3").addEventListener("animationend", showDilemma3);
+}
 
 /*function startGame() {
     console.log("start game");

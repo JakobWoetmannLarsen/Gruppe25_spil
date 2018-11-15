@@ -155,7 +155,7 @@ body {
     background-image: url(svg/Hjerte.svg);
     background-size: 100%;
     left: 10vw;
-    top: 36vw;
+    top: 9vw;
     z-index: 0;
 }
 
@@ -166,7 +166,7 @@ body {
     background-image: url(svg/playknap.svg);
     background-size: 100%;
     left: 17vw;
-    top: 40vw;
+    top: 13vw;
     cursor: pointer;
     z-index: 1;
 }
@@ -179,8 +179,8 @@ body {
     height: 8vw;
     background-image: url(svg/settings.svg);
     background-size: 100%;
-    left: 90vw;
-    top: 2vw;
+    left: 7vw;
+    top: 45vw;
     cursor: pointer;
 }
 
@@ -190,8 +190,8 @@ body {
     height: 18vw;
     background-image: url(svg/Snapout_ofit.svg);
     background-size: 100%;
-    left: 5vw;
-    top: 3vw;
+    left: 72vw;
+    top: 2vw;
 }
 
 #snaplogo {
@@ -200,8 +200,8 @@ body {
     height: 3.5vw;
     background-image: url(svg/Snapchat_logo.svg);
     background-size: 100%;
-    left: 12.7vw;
-    top: 5.5vw;
+    left: 79.7vw;
+    top: 4.5vw;
 }
 
 /*/////////////////////////////// Settings ///////////////////*/
@@ -209,8 +209,8 @@ body {
     position: absolute;
     top: 40vw;
     left: 2vw;
-    width: 100vw;
-    height: 122vw;
+    width: 10vw;
+    height: 12vw;
     background-image: url();
     background-size: 100%;
 
@@ -250,6 +250,77 @@ body {
     top: 33vw;
     cursor: pointer;
 }
+
+
+/*/////////////////////////////// Dilemma1 ///////////////////*/
+#dilemma1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 56vw;
+    background-image: url(svg/skoleg%C3%A5rd_scene.svg);
+    background-size: 100%;
+
+}
+
+#next1 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    background-image: url(svg/playknap_cirkel.svg);
+    background-size: 100%;
+    left: 75vw;
+    top: 33vw;
+    cursor: pointer;
+}
+
+/*/////////////////////////////// Dilemma2 ///////////////////*/
+#dilemma2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 56vw;
+    background-image: url(svg/skoleg%C3%A5rd_scene.svg);
+    background-size: 100%;
+
+}
+
+#next2 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    background-image: url(svg/playknap_cirkel.svg);
+    background-size: 100%;
+    left: 75vw;
+    top: 33vw;
+    cursor: pointer;
+}
+
+/*/////////////////////////////// Dilemma3 ///////////////////*/
+#dilemma3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 56vw;
+    background-image: url(svg/skoleg%C3%A5rd_scene.svg);
+    background-size: 100%;
+
+}
+
+#next3 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    background-image: url(svg/playknap_cirkel.svg);
+    background-size: 100%;
+    left: 75vw;
+    top: 33vw;
+    cursor: pointer;
+}
+
 
 /*/////////////////////////////// Game over ///////////////////*/
 

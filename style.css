@@ -133,7 +133,7 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 177vw;
+    height: 56vw;
 }
 
 /*/////////////////////////////// Start skærm ///////////////////*/
@@ -142,44 +142,66 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 177vw;
-    background-image: url();
+    height: 56vw;
+    background-image: url(svg/start_skaerm.svg);
     background-size: 100%;
 
 }
 
+#hjerte {
+    position: absolute;
+    width: 20vw;
+    height: 17vw;
+    background-image: url(svg/Hjerte.svg);
+    background-size: 100%;
+    left: 10vw;
+    top: 36vw;
+    z-index: 0;
+}
+
 #play {
     position: absolute;
-    width: 40vw;
-    height: 40vw;
-    background-image: url();
+    width: 7.5vw;
+    height: 8.5vw;
+    background-image: url(svg/playknap.svg);
     background-size: 100%;
-    left: 30vw;
-    top: 37vw;
+    left: 17vw;
+    top: 40vw;
     cursor: pointer;
+    z-index: 1;
 }
 
 
 
 #settings {
     position: absolute;
-    width: 25vw;
-    height: 24.8vw;
-    background-image: url();
+    width: 8vw;
+    height: 8vw;
+    background-image: url(svg/settings.svg);
     background-size: 100%;
-    left: 65vw;
-    top: 105vw;
+    left: 90vw;
+    top: 2vw;
     cursor: pointer;
 }
 
-#bamse_start {
+#snapout {
     position: absolute;
-    width: 50vw;
-    height: 70vw;
-    background-image: url();
+    width: 25vw;
+    height: 18vw;
+    background-image: url(svg/Snapout_ofit.svg);
     background-size: 100%;
     left: 5vw;
-    top: 107vw;
+    top: 3vw;
+}
+
+#snaplogo {
+    position: absolute;
+    width: 3.5vw;
+    height: 3.5vw;
+    background-image: url(svg/Snapchat_logo.svg);
+    background-size: 100%;
+    left: 12.7vw;
+    top: 5.5vw;
 }
 
 /*/////////////////////////////// Settings ///////////////////*/
@@ -202,6 +224,30 @@ body {
     background-size: 100%;
     left: 68vw;
     top: 2vw;
+    cursor: pointer;
+}
+
+/*/////////////////////////////// Intro ///////////////////*/
+
+#intro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 56vw;
+    background-image: url(svg/skoleg%C3%A5rd_scene.svg);
+    background-size: 100%;
+
+}
+
+#next {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    background-image: url(svg/playknap_cirkel.svg);
+    background-size: 100%;
+    left: 75vw;
+    top: 33vw;
     cursor: pointer;
 }
 

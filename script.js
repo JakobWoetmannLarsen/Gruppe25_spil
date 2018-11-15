@@ -14,7 +14,8 @@ function sidenVises() {
 function showStart() {
     console.log("showStart");
     document.querySelector("#start").classList.remove("hide");
-    document.querySelector("#play").classList.add("pulse");
+    document.querySelector("#hjerte").classList.add("pulse");
+    document.querySelector("#snaplogo").classList.add("pulse");
     document.querySelector("#play").addEventListener("click", hideStart);
     document.querySelector("#settings").classList.add("spin");
     document.querySelector("#settings").addEventListener("click", showMenu);
@@ -32,15 +33,16 @@ function hideMenu() {
 }*/
 
 
-/*function hideStart() {
+function hideStart() {
     console.log("hideStart");
-    document.querySelector("#play").classList.remove("pulse");
+    document.querySelector("#hjerte").classList.remove("pulse");
+    document.querySelector("#snaplogo").classList.remove("pulse");
     document.querySelector("#start").classList.add("fade_out");
     document.querySelector("#start").addEventListener("animationend", showIntro);
-}*/
+}
 
 
-/*function showIntro() {
+function showIntro() {
     console.log("showIntro");
     // document.querySelector("#start").removeEventListener("animationend", showIntro);
     document.querySelector("#start").classList.add("hide");
@@ -56,7 +58,7 @@ function hideIntro() {
     document.querySelector("#next").classList.remove("pulse");
     document.querySelector("#intro").classList.add("fade_out");
     document.querySelector("#intro").addEventListener("animationend", startGame);
-}*/
+}
 
 
 /*function startGame() {
